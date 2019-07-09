@@ -41,6 +41,18 @@
 <script type="text/javascript">
 
 	// your solution here
+	$(document).ready(() => {
+		
+			let addBubble = function() {
+				$('.shape-container').append('<div class="p2-circle bg-blue"> </div>');
+			};
+		
+			let bubbles = setInterval(addBubble, 1000);
+			
+			$('button').on('click', () => {
+				clearInterval(bubbles);
+			});
+	});
 
 </script>
 </body>
