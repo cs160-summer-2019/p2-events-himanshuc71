@@ -64,7 +64,31 @@
 
 <script type="text/javascript">
 	// your solution here
-
+	$(document).ready(() => {
+		
+		$('.bg-purple').on('click', () => {
+			$('.bg-purple').hide();
+		});
+	
+		$('.bg-green').on('click', () => {
+			$('.bg-green').hide();
+			$('.bg-blue').hide();
+		});
+		
+		$('.bg-orange.p2-border').on('click', () => {
+			$('.bg-orange.p2-border').hide();
+		});
+		
+		$('#gradient-circle').on('mouseenter', () => {
+			$('#gradient-circle').hide();
+		});
+		
+		$('button').on('click', () => {
+			location.reload(true);
+		});
+		
+		
+	});
 </script>
 </body>
 </html>
